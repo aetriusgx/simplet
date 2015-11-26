@@ -1,77 +1,77 @@
 # ModPE
 
-# `dumpVtable(string, int)`
+## `dumpVtable(string, int)`
 - No information yet.
 
-# `getBytesFromTexturePack(string)`
+## `getBytesFromTexturePack(string)`
 - No information yet.
 
-# `getMinecraftVersion()`
+## `getMinecraftVersion()`
 - No information yet.
 
-# `langEdit(key: string, value: string)`
+## `langEdit(key: string, value: string)`
 Edits a key/value pair in MC:PE's i18n.
 
-# `leaveGame()`
+## `leaveGame()`
 - No information yet.
 
-# `log(message: string)`
+## `log(message: string)`
 Logs something into LogCat.
 
-# `openInputStreamFromTexturePack(string)`
+## `openInputStreamFromTexturePack(string)`
 - No information yet.
 
-# `overrideTexture(string, string)`
+## `overrideTexture(string, string)`
 - No information yet.
 
-# `readData(key: string) -> string`
+## `readData(key: string) -> string`
 Reads stored data.
 
-# `removeData(key: string)`
+## `removeData(key: string)`
 Removes stored data.
 
-# `resetFov()`
+## `resetFov()`
 Resets FOV back to normal.
 
-# `resetImages()`
+## `resetImages()`
 **Speculation:** Resets images modified back to normal.
 
-# `saveData(key: string, data: string)`
+## `saveData(key: string, data: string)`
 Saves data into BL's preferences.
 
-# `selectLevel(string)`
+## `selectLevel(string)`
 - No information yet.
 
-# `setCamera(target: entity)`
+## `setCamera(target: entity)`
 Sets the camera to an entity.
 
-# `setFoodItem(id: int, icon: string, health: int, iconSubIndex: int, name: string, maxStack: int)`
+## `setFoodItem(id: int, icon: string, health: int, iconSubIndex: int, name: string, maxStack: int)`
 Creates a food item.
 
-## Example
+### Example
 The below code creates a food called "Lava Food" which looks like lava and restores
 999 half-hearts.
 ```js
 ModPE.setFoodItem(1000, "still_lava", 999, 0, "Lava Food", 64);
 ```
 
-# `setFov(fov: double)`
+## `setFov(fov: double)`
 Sets the FOV to the desired amount.
 
-# `setGameSpeed(speed: double)`
+## `setGameSpeed(speed: double)`
 **Speculation:** Sets the game speed to the amount of ticks per second.
 The default is 20.
 
-# `setItem(id: int, icon: string, iconSubIndex: int, name: string, maxStack: int)`
+## `setItem(id: int, icon: string, iconSubIndex: int, name: string, maxStack: int)`
 Creates a new item.
 
-# `setItems(url: string)`
+## `setItems(url: string)`
 Sets the textures for items from an URL.
 
-# `setTerrain(url: string)`
+## `setTerrain(url: string)`
 Sets the textures for terrians from an URL.
 
-# `showTipMessage(message: string)`
+## `showTipMessage(message: string)`
 Shows a tip message (like the one displayed when you hold an item.)
 
 ## Example
@@ -82,5 +82,5 @@ function modTick() {
 }
 ```
 
-# `takeScreenshot(filename: string)`
+## `takeScreenshot(filename: string)`
 **Speculation:** Takes a screenshot and saves it to `filename`.
