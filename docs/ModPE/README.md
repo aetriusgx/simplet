@@ -1,19 +1,20 @@
 # ModPE
 
 ## `dumpVtable(string, int)`
-- No information yet.
+- No information yet.  
+Has to do with dumping Vtables from the game, probably used to help development with BlockLauncher.
 
 ## `getBytesFromTexturePack(string)`
 - No information yet.
 
-## `getMinecraftVersion()`
-- No information yet.
+## `getMinecraftVersion() -> string?`
+**Speculation:** Returns the current Minecraft: PE version as a string.
 
 ## `langEdit(key: string, value: string)`
 Edits a key/value pair in MC:PE's i18n.
 
 ## `leaveGame()`
-- No information yet.
+**Speculation:** Leaves the current game.
 
 ## `log(message: string)`
 Logs something into LogCat.
@@ -74,7 +75,7 @@ Sets the textures for terrians from an URL.
 ## `showTipMessage(message: string)`
 Shows a tip message (like the one displayed when you hold an item.)
 
-## Example
+### Example
 The below code constantly displays a tip message.
 ```js
 function modTick() {
