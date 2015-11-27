@@ -1,14 +1,14 @@
 # Item
-## `addCraftRecipe(int, int, int, Scriptable)`
+## `addCraftRecipe(int, int, int, [int, int, int])`
 - No information yet.
 
 ## `addFurnaceRecipe(int, int, int)`
 - No information yet.
 
-## `addShapedRecipe(int, int, int, Scriptable, Scriptable)`
+## `addShapedRecipe(int, int, int, [string, string, string], [string, int, int])`
 - No information yet.
 
-## `defineArmor(int, string, int, string, string, int, int, int)`
+## `defineArmor(int, string, int, string, string, int, int, Object)`
 - No information yet.
 
 ## `getName(int, int)`
