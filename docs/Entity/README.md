@@ -1,5 +1,5 @@
 # Entity
-## `addEffect(entity, int, int, int)`
+## `addEffect(entity, Object, int, int, boolean, boolean)`
 - No information yet.
 
 ## `getAll()`
