@@ -1,5 +1,5 @@
 # Block
-## `defineBlock(int, string, Object, Object, Object, Object)`
+## `defineBlock(int, string, Object, int, boolean, int)`
 - No information yet.
 
 ## `getAllBlockIds()`
@@ -8,7 +8,7 @@
 ## `getRenderType(int)`
 - No information yet.
 
-## `setColor(int, Scriptable)`
+## `setColor(int, [hex])`
 - No information yet.
 
 ## `setDestroyTime(int, double)`
