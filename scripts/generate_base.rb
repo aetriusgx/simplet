@@ -1,5 +1,6 @@
 # read file
 file_data = File.read("../modpescript_dump.txt")
+encountered = []
 
 file_data.each_line do |line|
   md_namespacemethod = /(.+)\.(.+)\((.+)?\);/.match(line)
@@ -22,6 +23,12 @@ file_data.each_line do |line|
       end
     end
 
-    puts "#{md_namespacemethod[1]}.#{md_namespacemethod[2]}(#{args.join(", ")})"
+    if not encountered.include? md_namespacemethod[1]
+      puts "# #{md_namespacemethod[1]}"
+      encountered << md_namespacemethod[1]
+    end
+    puts "## `#{md_namespacemethod[2]}(#{args.join(", ")})`"
+    puts "- No information yet."
+    puts
   end
 end
