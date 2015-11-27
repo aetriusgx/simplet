@@ -63,6 +63,9 @@ Sets the FOV to the desired amount.
 **Speculation:** Sets the game speed to the amount of ticks per second.
 The default is 20.
 
+## `setGuiBlocks(url: string)`
+Sets the textures for GUI blocks from an URL.
+
 ## `setItem(id: int, icon: string, iconSubIndex: int, name: string, maxStack: int)`
 Creates a new item.
 

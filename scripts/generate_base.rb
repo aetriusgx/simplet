@@ -15,10 +15,11 @@ file_data.each_line do |line|
     # Loop through each (par[NUM][TYPE], ) arg
     if not md_args.nil?
       md_args.each do |it|
+        f = it[1].sub("String", "string")
         if md_namespacemethod[1] == "Entity"
-          args << it[1].sub("Object", "entity")
+          args << f.sub("Object", "entity")
         else
-          args << it[1]
+          args << f
         end
       end
     end
